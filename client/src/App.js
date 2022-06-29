@@ -4,9 +4,8 @@ import SettingBar from "./components/SettingBar";
 import Canvas from "./components/Canvas";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 
-function App() {
+export function App() {
   return (
-    
     <BrowserRouter>
       <div>
         <Switch>
@@ -19,8 +18,6 @@ function App() {
         </Switch>
       </div>
     </BrowserRouter>
-  
   );
 }
 
-export default App;
