@@ -5,6 +5,7 @@ const aWss = WSServer.getWss()
 const cors = require('cors')
 const fs = require('fs')
 const path = require('path')
+require('dotenv').config()
 
 app.use(cors())
 app.use(express.json())
@@ -58,5 +59,4 @@ const broadcastConnection = (ws, msg) => {
   })
 }
 
-app.listen(5000, () => console.log(`Server has started on port ${PORT}`))
-
+app.listen(PORT, () => console.log(`Server has started on port ${PORT}`))
